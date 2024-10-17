@@ -10,12 +10,12 @@ namespace MovieFestival
     public class Movie
     {
         public string Title { get; set; }
-        public string Genre { get; set; }
+        public Genre Genre { get; set; }
         public string Length { get; set; }
 
         public string GetData()
         {
-            return Title + "" + Genre + "" + Length;
+            return Title + "" + Length + "" + Genre.GetData();
         }
     }
 }
